@@ -9,9 +9,7 @@ from crewai.tools import BaseTool
 from langchain_community.document_loaders import PyPDFLoader
 
 
-# ==============================
 # Financial Document Tool
-# ==============================
 class FinancialDocumentTool(BaseTool):
     name: str = "Financial Document Reader"
     description: str = (
@@ -44,9 +42,7 @@ class FinancialDocumentTool(BaseTool):
             return f"Error reading document: {str(e)}"
 
 
-# ==============================
 # Investment Tool (Optional)
-# ==============================
 class InvestmentTool(BaseTool):
     name: str = "Investment Analyzer"
     description: str = "Analyzes financial document text and provides investment insights."
@@ -64,9 +60,7 @@ class InvestmentTool(BaseTool):
         )
 
 
-# ==============================
 # Risk Tool (Optional)
-# ==============================
 class RiskTool(BaseTool):
     name: str = "Risk Analyzer"
     description: str = "Analyzes financial risks from document data."

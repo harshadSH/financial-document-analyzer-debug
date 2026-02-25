@@ -1,14 +1,9 @@
-# ==============================
-# Imports
-# ==============================
 from crewai import Task
 from agents import financial_analyst, verifier, investment_advisor, risk_assessor
 from tools import FinancialDocumentTool
 
 
-# ==============================
 # Verification Task
-# ==============================
 verification = Task(
     description="""
     Verify whether the uploaded document is a financial document.
@@ -32,9 +27,7 @@ verification = Task(
 )
 
 
-# ==============================
 # Financial Analysis Task
-# ==============================
 analyze_financial_document = Task(
     description="""
     Analyze the financial document.
@@ -65,9 +58,7 @@ analyze_financial_document = Task(
 )
 
 
-# ==============================
 # Investment Analysis Task
-# ==============================
 investment_analysis = Task(
     description="""
     Based on the financial analysis:
@@ -89,9 +80,7 @@ investment_analysis = Task(
 )
 
 
-# ==============================
 # Risk Assessment Task
-# ==============================
 risk_assessment = Task(
     description="""
     Identify risks from the financial document:

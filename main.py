@@ -1,4 +1,3 @@
-# Imports
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException, BackgroundTasks
 import os
 import uuid

@@ -1,10 +1,6 @@
-# ==============================
-# Importing Libraries
-# ==============================
 import os
 from dotenv import load_dotenv
 
-# 🔥 Disable OpenAI fallback (IMPORTANT)
 
 # Load environment variables
 load_dotenv()
